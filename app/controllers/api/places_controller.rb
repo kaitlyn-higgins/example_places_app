@@ -18,7 +18,7 @@ class Api::PlacesController < ApplicationController
     if @place.save
       render 'show.json.jbuilder'
     else
-      render json: {errors: @place.errors.full_messages}, status: 422
+      render json: {errors: @place.errors.full_messages}
     end
   end
 
@@ -30,7 +30,7 @@ class Api::PlacesController < ApplicationController
     if @place.save
       render 'show.json.jbuilder'
     else
-      render json: {errors: @place.errors.full_messages}, status: 422
+      render json: {errors: @place.errors.full_messages}
     end
   end
 
