@@ -1,0 +1,1 @@
+json.partial! "place.json.jbuilder", place: @place
